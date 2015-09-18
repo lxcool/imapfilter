@@ -9,7 +9,8 @@ FROM phusion/baseimage
 MAINTAINER Person Sebastien <personseb@yahoo.fr>
 
 # Set correct environment variables.
-ENV HOME /root
+#ENV HOME /root
+### not longer needed in baseimage 0.9.17 (release date: 2015-07-15)
 
 # Regenerate SSH host keys. baseimage-docker does not contain any, so you
 # have to do that yourself. You may also comment out this instruction; the
